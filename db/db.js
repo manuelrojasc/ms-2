@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const uri = "mongodb://root:root@localhost:27017/studentdb?authSource=admin";
+const uri = "mongodb://root:root@mongo:27017/studentdb?authSource=admin";
 
 mongoose.connect(uri, {
         useNewUrlParser: true,

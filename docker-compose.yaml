@@ -19,3 +19,8 @@ services:
         environment:
           ME_CONFIG_MONGODB_ADMINUSERNAME: root
           ME_CONFIG_MONGODB_ADMINPASSWORD: root
+    api:
+        build: .
+        ports: 
+         - 6000:6000
+    
