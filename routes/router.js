@@ -18,8 +18,8 @@ router.get('/listar/alumnos', async(request, response) => {
 
 router.post("/registrar/alumno", async(request, response) => {
     try {
-        var curso = new modelos.studentModel(request.body);
-        var result = await curso.save();
+        var student = new modelos.studentModel(request.body);
+        var result = await student.save();
         //response.send(result);
         response.json(result)
 

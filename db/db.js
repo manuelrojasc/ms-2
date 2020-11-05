@@ -10,9 +10,9 @@ mongoose.connect(uri, {
 
 
 const studentModel = mongoose.model("student", {
-    codigo: String,
-    nombre: String,
-    edad: String
+    cod_alumno: String,
+    cod_curso: String,
+    cantidad_asistencia: String
 });
 
 module.exports = {
